@@ -14,7 +14,7 @@
 
 OGSTM_ARCH=x86_64
 OGSTM_OS=LINUX
-OGSTM_COMPILER=intel
+OGSTM_COMPILER=nvhpc
 DEBUG=       # this is the choice for production flags 
 #DEBUG=.dbg   # this is the one for debug flags
 
@@ -34,8 +34,8 @@ export OPENMP_FLAG=          # OpenMP deactivated
 # Warning : this choice must be consistent with Section 1. 
 
 # Just comment the two following lines you are not using modules. 
-export MODULEFILE=$PWD/ogstm/compilers/machine_modules/g100.intel
-source $MODULEFILE
+#export MODULEFILE=$PWD/ogstm/compilers/machine_modules/g100.intel
+#source $MODULEFILE
 
 
 ###################################################################
